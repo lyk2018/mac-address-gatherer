@@ -1,0 +1,28 @@
+<table border="1" cellpadding="10">
+    <thead style=" background-color: lightgray; ">
+        <tr>
+            <td>
+                Full Name
+            </td>
+            <td>
+                Ip Address
+            </td>
+            <td>
+                Mac Address
+            </td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr th:each="user : ${users}" th:object="${user}">
+            <td th:text="*{name + ' ' + lastName}">
+                Full Name
+            </td>
+            <td th:text="*{ipAddress}">
+                Ip Address
+            </td>
+            <td th:text="*{macAddress}">
+                Mac Address
+            </td>
+        </tr>
+    </tbody>
+</table>

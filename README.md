@@ -1,0 +1,1 @@
+Only works when registering users are in the same network with the server.

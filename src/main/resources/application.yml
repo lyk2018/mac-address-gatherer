@@ -1,0 +1,13 @@
+spring:
+  datasource.url: jdbc:h2:~/macaddress_db
+  jpa:
+    open-in-view: false
+    hibernate.ddl-auto: update
+    properties.hibernate:
+      show_sql: true
+      use_sql_comments: true
+      format_sql: true
+
+logging.level:
+  org.hibernate.type.descriptor.sql.BasicBinder: trace
+  tr.org.linux.kamp: trace
